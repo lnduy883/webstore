@@ -1,0 +1,40 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+.wrapper{
+    border: 2px solid rgb(0, 0, 0);
+    width: 95%;
+    height: auto;
+    margin: 0 auto;
+}
+.title_admin{
+    text-align: center;
+    color: blue;
+}
+ul.admin_list_menu{
+    margin: 0;
+    padding: 0;
+}
+ul.admin_list_menu li{
+    float: left;
+    list-style: none;
+    padding: 10px;
+}
+ul.admin_list_menu li a{
+    text-decoration: none;
+}
+.clear{
+    clear: both;
+}
+table.lietke td,th {
+    border: 1px solid black;
+}
+table.lietke{
+    width: 100%;
+}
+table.tb_themsp td{
+    border: 1px solid black;
+}

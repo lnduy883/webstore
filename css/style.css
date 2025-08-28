@@ -1,0 +1,134 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+.wrapper{
+    width: 98%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.header{
+    height: 200px;
+    background-color: rgb(244, 84, 84);
+    background-image: url(../images/headerimg.png);
+    background-repeat: no-repeat;
+    background-size: 100% 200px;
+}
+
+.menu{
+    height: 55px;
+    background-color: rgb(59, 50, 65);
+}
+ul.list_menu{
+    list-style: none;
+    width: 50%;
+    margin: 0 200px;
+    line-height: 30px;
+}
+ul.list_menu li{
+    float: left;
+    margin: 5px;
+    padding: 5px;
+}
+ul.list_menu li a{
+    text-decoration: none;
+    color: rgb(176, 165, 165);
+    display: block;
+    font-size: 16px;
+}
+ul.list_menu li :hover{
+    border-radius: 3px;
+    padding: 2px;
+}
+ul.list_menu li a:hover{
+    color: white;
+
+}
+
+#main{
+    border: 2px solid rgb(199, 0, 249);
+    height: 900px;
+    background-color: rgb(243, 236, 236);
+}
+
+.sidebar{
+    height: 580px;
+    width: 16%;
+    margin-top: 10px;
+    margin-left: 10px;
+    float: left;
+}
+ul.list_sidebar{
+    list-style: none;
+    line-height: 30px;
+    padding-left: 0;
+}
+ul.list_sidebar li{
+    padding: 5px;
+    text-align: left;
+    background-color: rgb(193, 214, 207);
+    border-block-end: 1px solid gray;
+}
+ul.list_sidebar li a{
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+ul.list_sidebar li:hover{
+    background-color: rgb(237, 139, 139);
+    border-radius: 5px;
+}
+
+.maincontent{
+    height: 900px;
+    width: 82.5%;
+    margin-top: 10px;
+    margin-left: 10px;
+    float: right;
+    
+}
+ul.list_products{
+    list-style: none;
+    width: 99%;
+
+}
+ul.list_products li{
+    border: 1px dashed rgb(0, 0, 0);
+    float: left;
+    margin: 5px;
+    padding: 10px;
+    width: 20%;
+    background: rgb(243, 241, 241);
+}
+ul.list_products li img{
+    width: 100%;
+}
+.title_product{
+    text-align: center;
+    padding-bottom: 10px;
+    font-size:larger;
+
+}
+.title_price{
+    color:rgb(3, 190, 3);
+}
+
+.clear{
+    clear: both;
+}
+.footer{
+    border: 1px solid black;
+    height: 200px;
+    background-color: black;
+    color: white;
+}
+.footer_copyright{
+    text-align: center;
+    margin: 60px auto;
+    color: white;
+}
+
+
