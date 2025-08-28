@@ -22,12 +22,12 @@
         <td>
             <img src="../images/<?php echo $r["hinhanh"]; ?>" alt="<?php echo $r["hinhanh"]; ?>" height="200px" width="200px">
             <input type="file" name="hinhanhsp">
-            <input type="text" hidden value="<?php echo $r["hinhanh"]; ?>" name="hinhanhtruoc">
+            <input type="text" name="hinhanhsptruoc" hidden value="<?php echo $r["hinhanh"]; ?>" name="hinhanhtruoc">
         </td>
     </tr>
     <tr>
         <td>Danh mục</td>
-        <td><select name="danhmucsp">
+        <td><select name="id_danhmuc">
             <?php  
             $data_danhmuc = new database();
             $data_danhmuc->select("SELECT * FROM danhmuc");

@@ -7,7 +7,6 @@
     while($r = $data->fetch()){
    ?>     
         <li><a href="index.php?quanly=danhmucsanpham&id=<?php echo $r["id_danhmuc"] ?>"><?php echo $r["tendanhmuc"]; ?></a></li>  
-
     <?php }
 ?>
     

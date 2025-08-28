@@ -29,18 +29,19 @@
         $tensp = $_POST["tensp"];
         $giasp = $_POST["giasp"];
         $soluongsp = $_POST["soluongsp"];
-        $tinhtrang = $_POST["tinhtrangsp"];
+        $tinhtrangsp = $_POST["tinhtrangsp"];
+        $id_danhmuc = $_POST["id_danhmuc"];  
         if($_FILES["hinhanhsp"]["size"] > 0){
             $hinhanhsp = $_FILES["hinhanhsp"]["name"];
             $hinhanhsp = time()."_".$hinhanhsp;
-            $id_danhmuc = $_POST["id_danhmuc"];
+            $hinhanhsp_tmp = $_FILES["hinhanhsp"]["tmp_name"];
+            move_uploaded_file($hinhanhsp_tmp,"../../../images/".$hinhanhsp);
             $data->command("UPDATE sanpham1 SET tensanpham='$tensp',gia='$giasp',hinhanh='$hinhanhsp',soluong='$soluongsp',tinhtrang='$tinhtrangsp',id_danhmuc='$id_danhmuc'
             WHERE id_sanpham='$idsp'"); 
             header("location:../../index.php?action=quanlysanpham");
         }else{
-            $hinhanhtruoc = $_POST["hinhanhtruoc"];
-            $id_danhmuc = $_POST["id_danhmuc"];
-            $data->command("UPDATE sanpham1 SET tensanpham='$tensp',gia='$giasp',hinhanh='$hinhanhsp',soluong='$soluongsp',tinhtrang='$tinhtrangsp',id_danhmuc='$id_danhmuc'
+            $hinhanhsptruoc = $_POST["hinhanhsptruoc"];
+            $data->command("UPDATE sanpham1 SET tensanpham='$tensp',gia='$giasp',hinhanh='$hinhanhsptruoc',soluong='$soluongsp',tinhtrang='$tinhtrangsp',id_danhmuc='$id_danhmuc'
             WHERE id_sanpham='$idsp'"); 
             header("location:../../index.php?action=quanlysanpham");  
         }

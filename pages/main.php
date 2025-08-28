@@ -10,6 +10,7 @@
         }else{
             $tam = '';
         }
+
         if($tam=='danhmucsanpham'){
             include "main/danhmuc.php";
         }else if($tam=='giohang'){
@@ -19,7 +20,10 @@
         }
         else if($tam=="tintuc"){
             include "main/tintuc.php";
-        }else{
+        }else if($tam=="sanpham"){
+            include "main/sanpham.php";
+        }
+        else{
             include "main/main_index.php";
 
         }
