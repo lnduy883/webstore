@@ -5,7 +5,7 @@
     $r = $data->fetch();
     $data->select("SELECT * FROM sanpham1 WHERE id_danhmuc='$id_danhmuc' ORDER BY id_sanpham DESC");
 ?>
-<h2 class="section-title">Hãng > <?php echo $r["tendanhmuc"]; ?></h2>
+<h2 class="section-title"><a href="index.php">SẢN PHẨM / </a> <?php echo $r["tendanhmuc"]; ?></h2>
 
 <ul class="product-list">
     <?php

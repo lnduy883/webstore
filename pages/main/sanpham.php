@@ -9,10 +9,10 @@
 ?>
 
 <h1 class="ctsp-breadcrumb">
-    Hãng > 
+    <a href="index.php">SẢN PHẨM / </a>
     <a href="?quanly=danhmucsanpham&id=<?php echo $r["id_danhmuc"]; ?>">
         <?php echo $r["tendanhmuc"]; ?>
-    </a> > 
+    </a> / 
     <a href="?quanly=sanpham&id=<?php echo $id_sanpham; ?>">
         <?php echo $r["tensanpham"]; ?>
     </a>
@@ -22,14 +22,15 @@
     <div class="ctsp-img">
         <img src="images/<?php echo $r["hinhanh"]; ?>" alt="<?php echo $r["hinhanh"]; ?>">
     </div>
-
+<form action="pages/main/themgiohang.php?id=<?php echo $r["id_sanpham"]; ?>" method="post">
     <div class="ctsp-info">
         <div class="ctsp-title"><?php echo $r["tensanpham"]; ?></div>
         <div class="ctsp-price"><?php echo number_format($r["gia"],0,",",".") . " đ" ; ?></div>
         <div class="ctsp-soluong">Số lượng: <?php echo $r["soluong"]; ?></div>
         <div class="ctsp-danhmuc">Danh mục: <?php echo $r["tendanhmuc"]; ?></div>
-        <button class="ctsp-addcart">Thêm vào giỏ hàng</button>
+        <button class="ctsp-addcart" type="submit" name="themgiohang">Thêm vào giỏ hàng</button>
     </div>
+</form>
 </div>
 
 

@@ -1,3 +1,6 @@
+<?php
+ session_start(); 
+ ?>
 <div class="cart-page">
     <h2 class="section-title">Giỏ hàng của bạn</h2>
 
@@ -13,33 +16,39 @@
             </tr>
         </thead>
         <tbody>
-            <!-- Ví dụ 1 sản phẩm -->
-            <tr>
-                <td><img src="images/product1.jpg" alt="SP1"></td>
-                <td>Áo thun nam</td>
-                <td>250,000đ</td>
+            <?php 
+            if(isset($_SESSION["cart"])){
+                $tongtien = 0;
+                foreach($_SESSION["cart"] as $cart_item){
+                    $thanhtien = $cart_item["gia"]*$cart_item["soluong"];
+                    $tongtien += $thanhtien; 
+            ?>
+                <tr>
+                <td><img src="images/<?php echo $cart_item["hinhanh"]; ?>" alt="<?php echo $cart_item["hinhanh"]; ?>"></td>
+                <td><?php echo $cart_item["tensanpham"]; ?></td>
+                <td><?php echo number_format($cart_item["gia"],0,",",".") . " đ" ?></td>
                 <td>
-                    <input type="number" value="1" min="1">
+                    <input type="number" value="<?php echo $cart_item["soluong"]; ?>" min="1">
                 </td>
-                <td>250,000đ</td>
+                <td><?php echo number_format($thanhtien,0,",",".")." đ"; ?></td>
                 <td><button class="btn-remove">X</button></td>
             </tr>
+              <?php  }
+              }else{
+                echo "Hiện chưa có sản phẩm nào trong giỏ hàng!";
+              }
+            ?>
 
-            <tr>
-                <td><img src="images/product2.jpg" alt="SP2"></td>
-                <td>Giày sneaker</td>
-                <td>800,000đ</td>
-                <td>
-                    <input type="number" value="2" min="1">
-                </td>
-                <td>1,600,000đ</td>
-                <td><button class="btn-remove">X</button></td>
-            </tr>
         </tbody>
     </table>
 
     <div class="cart-total">
-        <p><strong>Tổng cộng:</strong> 1,850,000đ</p>
+        <p><strong>Tổng cộng:</strong> <?php if(isset($_SESSION["cart"])){
+            echo number_format($tongtien,0,",",".")." đ";
+        }else{
+            echo "0đ";
+        }
+         ?></p>
         <div class="cart-actions">
             <a href="index.php" class="btn-continue">← Tiếp tục mua hàng</a>
             <a href="index.php?quanly=thanhtoan" class="btn-checkout">Thanh toán</a>
