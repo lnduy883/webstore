@@ -31,17 +31,18 @@
                     <input type="number" value="<?php echo $cart_item["soluong"]; ?>" min="1">
                 </td>
                 <td><?php echo number_format($thanhtien,0,",",".")." đ"; ?></td>
-                <td><button class="btn-remove">X</button></td>
+                <td><a href="pages/main/themgiohang.php?xoa=<?php echo $cart_item["id"]; ?>"><button class="btn-remove">X</button></a></td>
             </tr>
               <?php  }
-              }else{
-                echo "Hiện chưa có sản phẩm nào trong giỏ hàng!";
-              }
+              }else{ ?>
+              <tr>
+             <td colspan=6><?php  echo "Hiện chưa có sản phẩm nào trong giỏ hàng!"; ?> </td> 
+         <?php     }  
             ?>
-
+            </tr>
         </tbody>
     </table>
-
+    <a href="pages/main/themgiohang.php?xoatatca=1">Xóa tất cả sản phẩm</a>
     <div class="cart-total">
         <p><strong>Tổng cộng:</strong> <?php if(isset($_SESSION["cart"])){
             echo number_format($tongtien,0,",",".")." đ";
