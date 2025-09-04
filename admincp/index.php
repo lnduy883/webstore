@@ -1,3 +1,9 @@
+<?php
+    session_start();
+    if(!isset($_SESSION["admin"])){
+        header("location:login.php");
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,15 +12,15 @@
     <title>Admincp</title>
     <link rel="stylesheet" type="text/css" href="css/style_admin.css">
 </head>
-<body>
-    <h1 class="title_admin">ADMINCP</h1>
-        <div class="wrapper">
+<body class="admin-body">
+    <h1 class="title-admin">ADMINCP</h1>
+    <div class="wrapper admin-wrapper">
         <?php 
         include "config/connect.php";
-        include "modules/header.php";
-        include "modules/menu.php";
-        include "modules/main.php";
-        include "modules/footer.php";
+        include "modules/header.php";   
+        include "modules/menu.php";    
+        include "modules/main.php";     
+        include "modules/footer.php";   
         ?>     
     </div>
 </body>

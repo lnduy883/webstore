@@ -20,7 +20,7 @@
 
     if(isset($_GET["id"])){
         $id_sp = $_GET["id"];
-        $data->command("DELETE FROM sanpham WHERE id_sanpham = '$id_sp'");
+        $data->command("DELETE FROM sanpham1 WHERE id_sanpham = '$id_sp'");
         header("location:../../index.php?action=quanlysanpham");
     }
 

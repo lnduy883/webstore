@@ -60,4 +60,27 @@
         $_SESSION["cart"] = $prd_cart;
         header("location:../../index.php?quanly=giohang");
     }
+
+    if(isset($_POST["soluong"])){
+        foreach($_SESSION["cart"] as $cart_item){
+            if($cart_item["id"]==$_POST["idsp"]){
+                $prd_cart[] = array(
+                'tensanpham' => $cart_item["tensanpham"],
+                'id'         => $cart_item["id"],
+                'gia'        => $cart_item["gia"],
+                'soluong'    => $_POST["soluong"],
+                'hinhanh'    => $cart_item["hinhanh"]);
+            }else{
+                $prd_cart[] = array(
+                'tensanpham' => $cart_item["tensanpham"],
+                'id'         => $cart_item["id"],
+                'gia'        => $cart_item["gia"],
+                'soluong'    => $cart_item["soluong"],
+                'hinhanh'    => $cart_item["hinhanh"]);
+            }
+
+            $_SESSION["cart"] = $prd_cart;
+        }
+        header("location:../../index.php?quanly=giohang"); 
+    }
 ?>

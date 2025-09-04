@@ -27,9 +27,10 @@
                 <td><img src="images/<?php echo $cart_item["hinhanh"]; ?>" alt="<?php echo $cart_item["hinhanh"]; ?>"></td>
                 <td><?php echo $cart_item["tensanpham"]; ?></td>
                 <td><?php echo number_format($cart_item["gia"],0,",",".") . " đ" ?></td>
-                <td>
-                    <input type="number" value="<?php echo $cart_item["soluong"]; ?>" min="1">
-                </td>
+                <td><form action="pages/main/themgiohang.php" method="post">
+                    <input type="text" name="idsp" value="<?php echo $cart_item["id"]; ?>" hidden >
+                    <input type="number" value="<?php echo $cart_item["soluong"]; ?>" min="1" name="soluong" onchange="this.form.submit()">
+                </form></td>
                 <td><?php echo number_format($thanhtien,0,",",".")." đ"; ?></td>
                 <td><a href="pages/main/themgiohang.php?xoa=<?php echo $cart_item["id"]; ?>"><button class="btn-remove">X</button></a></td>
             </tr>
