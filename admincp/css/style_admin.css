@@ -238,3 +238,79 @@
 }
 
 
+/* LOGIN */
+/* Nền riêng cho trang login */
+.login-page {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #74ebd5, #9face6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Container của form login */
+.login-container {
+  background: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+  width: 350px;
+}
+
+/* Tiêu đề login */
+.login-title {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Input */
+.login-input {
+  width: 93%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.login-input:focus {
+  border-color: #6c63ff;
+  box-shadow: 0 0 5px rgba(108, 99, 255, 0.5);
+}
+
+/* Nút login */
+.login-button {
+  width: 100%;
+  padding: 12px;
+  background: #6c63ff;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.login-button:hover {
+  background: #574bdb;
+}
+
+/* Link dưới form */
+.login-links {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.login-links a {
+  color: #6c63ff;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+.login-links a:hover {
+  text-decoration: underline;
+}

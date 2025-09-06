@@ -13,7 +13,7 @@
     <link rel="stylesheet" type="text/css" href="css/style_admin.css">
 </head>
 <body class="admin-body">
-    <h1 class="title-admin">ADMINCP</h1>
+    <h1 class="title-admin">ADMINCP/<?php echo $_SESSION["admin"]; ?></h1>
     <div class="wrapper admin-wrapper">
         <?php 
         include "config/connect.php";

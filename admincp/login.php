@@ -1,12 +1,23 @@
 <?php 
     session_start();
-    $taikhoan = "admin";
-    $matkhau = "123456";
+    include "config/connect.php";
+    $data = new database();
+    if(isset($_SESSION["admin"])){
+      header("location:index.php");
+    }
+
     if(isset($_POST["dangnhap"])){
-        if($_POST["taikhoan"] == "admin" && $_POST["matkhau"]=="123456"){
-            $_SESSION["admin"] = $taikhoan;
-            header("location:index.php");
-        }
+      $taikhoan = $_POST["taikhoan"];
+      $matkhau = md5($_POST["matkhau"]);
+      $data->select("SELECT * FROM admin WHERE username = '$taikhoan' AND password = '$matkhau'");
+      $i = 0;
+      while($r = $data->fetch()){
+        $i++;
+      }
+      if($i > 0){
+        $_SESSION["admin"] = $taikhoan;
+        header("location:index.php");
+      }
     }
 ?>
 <!DOCTYPE html>

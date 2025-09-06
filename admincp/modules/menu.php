@@ -7,5 +7,12 @@
             <li><a href="index.php?action=quanlysanpham"><i class="fas fa-box"></i> Sản phẩm</a></li>
             <li><a href="index.php?action=quanlylienhe"><i class="fas fa-envelope"></i> Liên hệ</a></li>
             <li><a href="index.php?action=quanlytintuc"><i class="fas fa-newspaper"></i> Tin tức</a></li>
+            <li>
+                <a href="index.php?action=quanlytaikhoan"><i class="fas fa-newspaper"></i> Tài khoản</a>
+                <ul>
+                    <li></li>
+                    <li><a href="modules/quanlytaikhoan/xulytk.php?action=dangxuat">Đăng xuất</a></li>
+                </ul>
+            </li>
         </ul>
     </div>
