@@ -23,6 +23,15 @@
         }else if($tam=="sanpham"){
             include "main/sanpham.php";
         }
+        else if($tam=="dangkytv"){
+            include "main/dangkytv.php";
+        }
+        else if($tam=="thongtintv"){
+            include "main/thongtintv.php";
+        }
+        else if($tam=="doimatkhautv"){
+            include "main/doimatkhautv.php";
+        }
         else{
             include "main/main_index.php";
 

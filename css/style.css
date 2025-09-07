@@ -236,6 +236,13 @@ body{
 #menu ul li:hover > ul.sub_menu {
     display: flex;
 }
+li .xin-chao{
+    color: white;
+    padding: 15px;
+    border-bottom: 1px solid white;
+}
+
+
 
 
 /* Breadcrumb */
@@ -532,3 +539,62 @@ body{
     background: #21867a;
 }
 
+
+
+.login-title {
+  text-align: center;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.login-form {
+  display: flex;
+  justify-content: center;
+}
+
+.login-table {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.login-table td {
+  padding: 8px;
+  font-size: 14px;
+  color: #444;
+}
+
+.login-table input {
+  padding: 8px;
+  width: 200px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.login-table input:focus {
+  border-color: #6c63ff;
+  box-shadow: 0 0 5px rgba(108, 99, 255, 0.5);
+}
+
+.login-buttons {
+  text-align: center;
+  padding-top: 10px;
+}
+
+.login-buttons button {
+  padding: 8px 15px;
+  margin: 0 5px;
+  background: #6c63ff;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.login-buttons button:hover {
+  background: #574bdb;
+}
