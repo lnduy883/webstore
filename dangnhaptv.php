@@ -4,7 +4,7 @@
     session_start();
     if(isset($_POST["dangnhaptv"])){
         $taikhoantv = $_POST["taikhoantv"];
-        $matkhautv = $_POST["matkhautv"];
+        $matkhautv = md5($_POST["matkhautv"]);
         $data->select("SELECT * FROM thanhvien WHERE taikhoan_tv = '$taikhoantv' AND matkhau_tv ='$matkhautv'");
         $i = 0;
         while($data->fetch()){

@@ -1,6 +1,12 @@
 <?php
- session_start(); 
- ?>
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+}
+
+if(!isset($_SESSION["thanhvien"])){
+    header("location:dangnhaptv.php");
+}
+?>
 <div class="cart-page">
     <h2 class="section-title">Giỏ hàng của bạn</h2>
 

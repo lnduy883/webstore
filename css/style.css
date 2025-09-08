@@ -598,3 +598,181 @@ li .xin-chao{
 .login-buttons button:hover {
   background: #574bdb;
 }
+
+
+/* DANGKYTV */
+.dk-title {
+  text-align: center;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.dk-table {
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  background: #fff;
+}
+
+.dk-label {
+  padding: 8px;
+  font-size: 14px;
+  color: #444;
+}
+
+.dk-input {
+  padding: 10px;
+  width: 220px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.dk-input:focus {
+  border-color: #6c63ff;
+  box-shadow: 0 0 5px rgba(108, 99, 255, 0.5);
+}
+
+.dk-submit {
+  text-align: center;
+  padding-top: 10px;
+}
+
+.dk-button {
+  padding: 10px 20px;
+  background: #6c63ff;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.dk-button:hover {
+  background: #574bdb;
+}
+
+
+/* THONGTINTV */
+/* Tiêu đề thông tin thành viên */
+.member-title {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 20px;
+}
+
+/* Bảng thông tin */
+.member-table {
+  margin: 0 auto;
+  border-collapse: collapse;
+  width: 400px;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+}
+
+/* Ô tiêu đề (thông tin) */
+.member-label {
+  padding: 12px;
+  text-align: left;
+  font-weight: bold;
+  color: #555;
+  background: #f4f4f4;
+  width: 40%;
+}
+
+/* Ô dữ liệu */
+.member-data {
+  padding: 12px;
+  text-align: left;
+  color: #222;
+}
+.member-data a{
+    text-decoration: none;
+    color: black;
+}
+
+/* Hiệu ứng hover cho từng dòng */
+.member-table tr:hover {
+  background: #f9f9ff;
+}
+
+
+/* DOIMATKHAU */
+/* Tiêu đề */
+.pw-title {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 22px;
+  font-weight: 600;
+  color: #2d2d2d;
+  letter-spacing: 0.5px;
+}
+
+/* Bảng chứa form */
+.pw-table {
+  margin: 0 auto;
+  width: 420px;
+  background: #fafafa;
+  border-radius: 16px;
+  overflow: hidden;
+  padding: 20px 25px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  border: 1px solid #eee;
+}
+
+/* Nhãn */
+.pw-label {
+  text-align: left;
+  padding: 10px;
+  color: #444;
+  font-size: 15px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+/* Input */
+.pw-input {
+  width: 80%;
+  padding: 10px 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+  background: #fff;
+  font-size: 14px;
+  transition: border 0.3s, box-shadow 0.3s;
+}
+
+.pw-input:focus {
+  border-color: #4a90e2;
+  box-shadow: 0 0 6px rgba(74,144,226,0.3);
+}
+
+/* Ô chứa nút */
+.pw-submit {
+  text-align: center;
+  padding-top: 20px;
+}
+
+/* Nút */
+.pw-button {
+  background: #4a90e2;
+  border: none;
+  padding: 12px 28px;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.pw-button:hover {
+  background: #357abd;
+  transform: translateY(-2px);
+}

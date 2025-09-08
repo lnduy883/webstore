@@ -26,14 +26,20 @@
                 }
             }
             if($found == false){
-                $_SESSION["cart"][] = $prd_cart;
-                header("location:../../index.php?quanly=giohang");
-
+                if(isset($_SESSION["thanhvien"])){
+                    $_SESSION["cart"][] = $prd_cart;
+                    header("location:../../index.php?quanly=giohang");      
+                }else{
+                    header("location:../../dangnhaptv.php");
+                }                
             }
-        } else {
-            $_SESSION["cart"][] = $prd_cart;
-            header("location:../../index.php?quanly=giohang");
-
+        } else{
+            if(isset($_SESSION["thanhvien"])){
+                $_SESSION["cart"][] = $prd_cart;
+                header("location:../../index.php?quanly=giohang");    
+            }else{
+                header("location:../../dangnhaptv.php");
+            }   
         }
     }
     }
