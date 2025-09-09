@@ -13,7 +13,10 @@
         if($i > 0){
             $_SESSION["thanhvien"] = $taikhoantv;
             header("location:index.php");
+        }else{
+            echo '<p style="color:red;text-align:center;">*Sai tài khoản hoặc mật khẩu. Vui lòng nhập lại</p>';
         }
+
     }
 ?>
 <!DOCTYPE html>

@@ -31,8 +31,9 @@
         }
         else if($tam=="doimatkhautv"){
             include "main/doimatkhautv.php";
-        }
-        else{
+        }else if($tam=="timkiem"){
+            include "main/timkiem.php";
+        }else{
             include "main/main_index.php";
 
         }

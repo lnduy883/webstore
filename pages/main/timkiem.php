@@ -1,8 +1,19 @@
 <?php 
     $data = new database();
-    $data->select("SELECT * FROM sanpham1 ORDER BY id_sanpham DESC");
+    $soluong = new database();
+    if(isset($_POST["btn-tim-kiem"]) && $_POST["tu-khoa"]!=null){
+        $tu_khoa = $_POST["tu-khoa"];
+    }else{
+        $tu_khoa = "";
+    }
+    $data->select("SELECT * FROM sanpham1 WHERE tensanpham LIKE '%".$tu_khoa."%' ORDER BY id_sanpham DESC ");
+    $soluong->select("SELECT * FROM sanpham1 WHERE tensanpham LIKE '%".$tu_khoa."%' ORDER BY id_sanpham DESC ");
+    $i=0;
+    while($soluong->fetch()){
+        $i++;
+    }
 ?>
-<h2 class="section-title">SẢN PHẨM MỚI NHẤT</h2>
+<h2>TÌM THẤY <a style="color:blue"><?php echo $i; ?></a> SẢN PHẨM</h2>
 
 <ul class="product-list">
     <?php 

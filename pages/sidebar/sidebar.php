@@ -1,4 +1,13 @@
+
+
 <div class="sidebar">
+    <form action="index.php?quanly=timkiem" method="post" class="search-form">
+    <p>
+      <input type="text" name="tu-khoa" class="search-input" placeholder="Nhập tên sản phẩm...">
+      <input type="submit" name="btn-tim-kiem" class="search-button" value="Tìm kiếm">
+    </p>
+  </form>
+
     <h3>Danh mục sản phẩm</h3>
     <ul class="list_sidebar">
 <?php 

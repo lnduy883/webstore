@@ -30,7 +30,7 @@
 </head>
 <body class="login-page">
   <div class="login-container">
-    <h2 class="login-title">Đăng nhập</h2>
+    <h2 class="login-title">Đăng nhập Admin</h2>
     <form action="login.php" method="post">
       <input type="text" class="login-input" name="taikhoan" placeholder="Tên đăng nhập" required>
       <input type="password" class="login-input" name="matkhau" placeholder="Mật khẩu" required>
