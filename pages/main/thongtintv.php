@@ -1,4 +1,9 @@
 <?php 
+    if(!isset($_SESSION["thanhvien"])){
+        header("location:index.php");
+    }
+?>
+<?php 
     $data = new database();
     $taikhoan_tv = $_SESSION["thanhvien"];
     $data->select("SELECT * FROM thanhvien WHERE taikhoan_tv = '$taikhoan_tv'");

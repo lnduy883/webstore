@@ -1,0 +1,1 @@
+<h3>Tài khoản đã tồn tại. <a href="index.php?quanly=dangkytv">Quay lại đăng ký</a></h3>

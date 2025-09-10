@@ -33,9 +33,10 @@
             include "main/doimatkhautv.php";
         }else if($tam=="timkiem"){
             include "main/timkiem.php";
+        }else if($tam=="taikhoantontai"){
+            include "main/taikhoantontai.php";
         }else{
             include "main/main_index.php";
-
         }
 
     ?>
