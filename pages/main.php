@@ -35,6 +35,9 @@
             include "main/timkiem.php";
         }else if($tam=="taikhoantontai"){
             include "main/taikhoantontai.php";
+        }else if($tam=="giohang-thanhtoan"){
+            include "main/giohang.php";
+            include "main/thanhtoan.php";
         }else{
             include "main/main_index.php";
         }

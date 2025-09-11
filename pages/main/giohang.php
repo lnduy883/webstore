@@ -59,7 +59,7 @@ if(!isset($_SESSION["thanhvien"])){
          ?></p>
         <div class="cart-actions">
             <a href="index.php" class="btn-continue">← Tiếp tục mua hàng</a>
-            <a href="index.php?quanly=thanhtoan" class="btn-checkout">Thanh toán</a>
+            <a href="index.php?quanly=giohang-thanhtoan" class="btn-checkout">Đặt hàng</a>
         </div>
     </div>
 </div>

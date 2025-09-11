@@ -821,3 +821,75 @@ li .xin-chao{
   background: #357abd;
   transform: translateY(-2px);
 }
+
+
+/* THANHTOAN */
+/* Tiêu đề */
+.order-title {
+  margin-bottom: 20px;
+  font-size: 22px;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Bảng form */
+.order-table {
+  width: 500px;
+  background: #fafafa;
+  border-radius: 12px;
+  padding: 20px 25px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  border: 1px solid #eee;
+  border-collapse: separate;
+  border-spacing: 0 12px; /* khoảng cách dòng */
+}
+
+/* Cột nhãn */
+.order-label {
+  text-align: left;
+  padding: 10px;
+  font-weight: 500;
+  color: #555;
+  width: 35%;
+  white-space: nowrap;
+}
+
+/* Input */
+.order-input {
+  width: 88%;
+  padding: 10px 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: all 0.3s;
+  outline: none;
+}
+
+.order-input:focus {
+  border-color: #4a90e2;
+  box-shadow: 0 0 5px rgba(74,144,226,0.3);
+}
+
+/* Hàng nút */
+.order-actions {
+  padding-top: 15px;
+}
+
+/* Nút */
+.order-button {
+  padding: 10px 20px;
+  margin: 0 8px;
+  background: #4a90e2;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.order-button:hover {
+  background: #357abd;
+  transform: translateY(-2px);
+}
